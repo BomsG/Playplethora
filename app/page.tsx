@@ -6,6 +6,11 @@ import heroi from "../public/images/hero.png";
 import Image from "next/image";
 import Bsellers from "@/components/Bsellers";
 import styleimg from "../public/images/style.png";
+import styleimg2 from "../public/images/style2.png";
+import Playground from "@/components/Playground";
+import Bcourt from "@/components/Bcourt";
+import Playverse from "@/components/Playverse";
+import FAQ from "@/components/Faaq";
 
 const HeroSection = () => {
   return (
@@ -79,6 +84,45 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+      <Playground />
+      <section className="bg-[#F3F3F3] py-20 overflow-hidden pl-25">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+          {/* --- Text Column (CONSTRAINED) --- */}
+          <div className="px-6 lg:px-0">
+            <div className="max-w-7xl mx-auto space-y-8 flex flex-col items-start">
+              <h2 className="hero font-heading text-3xl md:text-4xl lg:text-5xl uppercase leading-[1.1] tracking-tighter text-black">
+                Lorem ipsum dolor sit amet consectetur. In vestibulum fames
+                risus quis a ipsum porta amet dignissim.
+              </h2>
+
+              <button className="bg-white border border-zinc-300 px-8 py-3 text-[18px] font-semibold uppercase tracking-[0.2em] shadow-sm hover:bg-black hover:text-white transition-all duration-300">
+                DISPLAY
+              </button>
+            </div>
+          </div>
+
+          {/* --- Image Column (FULL BLEED RIGHT) --- */}
+          <div className="relative">
+            <div className="relative ml-auto w-full lg:w-[55vw] group">
+              {/* Shadow */}
+              <div className="absolute inset-0 bg-[#696969] translate-x-4 translate-y-4 z-0" />
+
+              {/* Image */}
+              <div className="relative z-10 aspect-4/3 md:aspect-square overflow-hidden border border-zinc-300 bg-white">
+                <Image
+                  src={styleimg2}
+                  alt="Editorial Fashion"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Bcourt />
+      <Playverse />
+      <FAQ />
     </>
   );
 };

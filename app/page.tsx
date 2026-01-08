@@ -16,7 +16,6 @@ const HeroSection = () => {
   return (
     <>
       <div className="relative min-h-screen bg-zinc-900 overflow-hidden font-sans">
-        {/* Background Image Container */}
         <div className="absolute inset-0 z-0">
           <Image
             src={heroi}
@@ -27,7 +26,6 @@ const HeroSection = () => {
 
         <Navbar />
 
-        {/* --- HERO CONTENT --- */}
         <main className="relative z-10 container mx-auto px-10 h-screen flex flex-col justify-end pb-32">
           <div className="grid grid-cols-12 items-end">
             {/* Main Typography Area */}

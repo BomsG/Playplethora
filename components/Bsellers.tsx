@@ -75,7 +75,7 @@ export default function Bsellers() {
           {MOCK_PRODUCTS.map((product) => (
             <div
               key={product.id}
-              className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.33%]"
+              className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.33%] border border-[#5C5C5C] rounded-sm"
             >
               <ProductCard {...product} />
             </div>
@@ -86,13 +86,13 @@ export default function Bsellers() {
       {/* Slider Controls */}
       <div className="flex justify-between items-center mt-10">
         {/* Pagination Dots */}
-        <div className="flex gap-2">
+        <div className="flex gap-2 border-2">
           {MOCK_PRODUCTS.map((_, i) => (
             <button
               key={i}
               onClick={() => scrollTo(i)}
               className={`h-1.5 transition-all duration-300 rounded-full ${
-                i === selectedIndex ? "bg-black w-6" : "bg-gray-300 w-1.5"
+                i === selectedIndex ? "bg-black w-6" : "bg-gray-300  w-1.5"
               }`}
             />
           ))}

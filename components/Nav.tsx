@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 import Image from "next/image";
 import {
   RiShoppingBagLine,
@@ -7,12 +6,12 @@ import {
   RiHeart3Fill,
 } from "react-icons/ri";
 import logo from "../public/images/Logo.png";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pt-3">
+    <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pt-3 ">
       <div className="relative w-full max-w-6xl bg-white text-black px-8 py-4 flex items-center justify-between shadow-[8px_8px_0px_0px_rgba(110,231,183,1)]">
-        {/* Left Links */}
         <div className="flex gap-8 text-[18px]  tracking-widest uppercase">
           <a href="#" className="hover:opacity-70">
             Brand
@@ -25,10 +24,8 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Logo */}
         <Image src={logo} alt="logo" />
 
-        {/* Right Icons */}
         <div className="flex gap-6 items-center text-[18px] ">
           <a href="#" className="text-[16px] uppercase hidden md:block">
             Contact

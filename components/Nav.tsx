@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pt-3 ">
-      <div className="relative w-full max-w-6xl bg-white text-black px-8 py-4 flex items-center justify-between shadow-[8px_8px_0px_0px_rgba(110,231,183,1)]">
+      <div className="relative w-full max-w-6xl bg-white border-2 border-black text-black px-8 py-4 flex items-center justify-between shadow-[8px_8px_0px_0px_rgba(110,231,183,1)]">
         <div className="flex gap-8 text-[18px]  tracking-widest uppercase">
           <a href="#" className="hover:opacity-70">
             Brand

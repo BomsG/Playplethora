@@ -28,6 +28,17 @@ export default function PlayPlethoraPage() {
       </div>
       <div>
         <Image src={about1} alt="about-image" className="w-full" />
+        <h2 className="hero text-3xl text-center py-20 ">
+          Lorem ipsum dolor sit amet <br /> consectetur. In vestibulum <br />
+          fames risus quis a ipsum porta <br /> amet dignissim. Lorem ipsum{" "}
+          <br /> dolor sit amet consectetur. In <br /> vestibulum fames risus
+          quis a <br /> ipsum porta amet dignissim.{" "}
+        </h2>
+        <div className="flex justify-center">
+          <button className="border py-3 px-2 text-[18px]  rounded-sm ">
+            CONTACT US
+          </button>
+        </div>
       </div>
     </>
   );
